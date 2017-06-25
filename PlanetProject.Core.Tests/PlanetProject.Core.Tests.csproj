@@ -51,9 +51,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\PlanetServiceTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PlanetProject.Core\PlanetProject.Core.csproj">
+      <Project>{1efac4ad-9aec-4e99-9953-afa1a13e42ac}</Project>
+      <Name>PlanetProject.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PlanetProject.Data\PlanetProject.Data.csproj">
+      <Project>{588e251e-e824-49eb-bce1-8159874b86c0}</Project>
+      <Name>PlanetProject.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
