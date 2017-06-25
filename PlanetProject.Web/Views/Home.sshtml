@@ -4,9 +4,63 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Planet Project</title>
+    <link rel="stylesheet" href="Content/bootstrap.min.css" />
+    <link rel="stylesheet" href="Content/site.css" />
 </head>
 <body>
-    <div id="root"></div>
-	<script src="Scripts/test.js"></script>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-4">
+        <div id="planetList" class="list-group">
+        </div>
+      </div>
+      <div class="col-md-8">
+        <table class="table table-bordered">
+          <tbody>
+            <tr>
+              <td class="info-label">Name</td>
+              <td>Earth</td>
+            </tr>
+            <tr>
+              <td class="info-label">Mass</td>
+              <td>1</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <script src="Scripts/jquery-1.9.1.min.js"></script>
+  <script src="Scripts/bootstrap.min.js"></script>
+  <script src="Scripts/bundle.js"></script>
+  <script>
+    function addPlanetItem(planet) {
+      var element = $('<a />')
+        .attr('href', '#')
+        .attr('class', 'list-group-item')
+        .text(planet.name);
+      $('#planetList').append(element);
+    }
+
+    function showInfoForPlanet(planet) {
+
+    }
+
+    function init() {
+      $.ajax({
+        method: 'GET',
+        url: '/api/planets',
+        success: function(data) {
+          data.map(function(planet) {
+            addPlanetItem(planet);
+          });
+        }
+      });
+    }
+
+    $(document).ready(function() {
+      init();
+    });
+  </script>
 </body>
 </html>
