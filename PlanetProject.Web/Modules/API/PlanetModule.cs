@@ -39,7 +39,12 @@ namespace PlanetProject.Web.Modules.API
         {
             return new PlanetViewModel
             {
-                Name = planet.Name
+                Name = planet.Name,
+                EquatorialCircumference = planet.EquatorialCircumference,
+                LengthOfDay = planet.LengthOfDay,
+                DistanceFromSun = planet.DistanceFromSun,
+                OrbitalPeriod = planet.OrbitalPeriod,
+                OrbitalVelocity = planet.OrbitalVelocity
             };
         }
     }
