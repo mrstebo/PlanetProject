@@ -30,7 +30,7 @@
   <div class="view-2D zoom-large">
     <div id="universe" class="scale-stretched">
       <div id="galaxy">
-        <div id="solar-system" class="earth">
+        <div id="solar-system">
           <div id="mercury" class="orbit">
             <div class="pos">
               <div class="planet">
@@ -105,11 +105,13 @@
     }
 
     function showInfoForPlanet(planetName) {
+      var ref = planetName.toLowerCase();
+      $('#solar-system').removeClass().addClass(ref);
       $('.planet-item').removeClass('active');
-      $('.' + planetName.toLowerCase()).addClass('active');
+      $('.' + ref).addClass('active');
       $.ajax({
         method: 'GET',
-        url: '/api/planets/' + planetName.toLowerCase(),
+        url: '/api/planets/' + ref,
         success: function(data) {
           populateInfoTable(data);
         }
