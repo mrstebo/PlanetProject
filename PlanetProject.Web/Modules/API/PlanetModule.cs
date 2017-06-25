@@ -40,9 +40,10 @@ namespace PlanetProject.Web.Modules.API
             return new PlanetViewModel
             {
                 Name = planet.Name,
-                EquatorialCircumference = planet.EquatorialCircumference,
-                LengthOfDay = planet.LengthOfDay,
                 DistanceFromSun = planet.DistanceFromSun,
+                Mass = planet.Mass,
+                Diameter = planet.Diameter,
+                LengthOfDay = planet.LengthOfDay,
                 OrbitalPeriod = planet.OrbitalPeriod,
                 OrbitalVelocity = planet.OrbitalVelocity
             };

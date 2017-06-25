@@ -38,9 +38,10 @@ namespace PlanetProject.Core.Services
             return new Planet
             {
                 Name = entity.Name,
-                EquatorialCircumference = entity.EquatorialCircumference,
-                LengthOfDay = entity.LengthOfDay,
                 DistanceFromSun = entity.DistanceFromSun,
+                Mass = entity.Mass,
+                Diameter = entity.Diameter,
+                LengthOfDay = entity.LengthOfDay,
                 OrbitalPeriod = entity.OrbitalPeriod,
                 OrbitalVelocity = entity.OrbitalVelocity
             };
