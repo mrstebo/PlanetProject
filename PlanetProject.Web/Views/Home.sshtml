@@ -17,14 +17,6 @@
       <div class="col-md-8">
         <table id="planetInfo" class="table table-bordered">
           <tbody>
-            <tr>
-              <td class="info-label">Name</td>
-              <td>Earth</td>
-            </tr>
-            <tr>
-              <td class="info-label">Mass</td>
-              <td>1</td>
-            </tr>
           </tbody>
         </table>
       </div>
@@ -37,18 +29,19 @@
     function addPlanetItem(planet) {
       var element = $('<a />')
         .attr('href', '#')
-        .attr('class', 'planet-item list-group-item')
+        .attr('class', planet.name.toLowerCase() + ' planet-item list-group-item')
         .attr('onclick', 'showInfoForPlanet(\'' + planet.name + '\')')
         .text(planet.name);
       $('#planetList').append(element);
     }
 
     function showInfoForPlanet(planetName) {
+      $('.planet-item').removeClass('active');
+      $('.' + planetName.toLowerCase()).addClass('active');
       $.ajax({
         method: 'GET',
         url: '/api/planets/' + planetName.toLowerCase(),
         success: function(data) {
-          console.log(data);
           populateInfoTable(data);
         }
       });
