@@ -43,7 +43,8 @@ namespace PlanetProject.Core.Services
                 Diameter = entity.Diameter,
                 LengthOfDay = entity.LengthOfDay,
                 OrbitalPeriod = entity.OrbitalPeriod,
-                OrbitalVelocity = entity.OrbitalVelocity
+                OrbitalVelocity = entity.OrbitalVelocity,
+                ImageUrl = entity.ImageUrl
             };
         }
     }

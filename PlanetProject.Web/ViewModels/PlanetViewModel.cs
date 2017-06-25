@@ -9,5 +9,6 @@
         public double LengthOfDay { get; set; }
         public double OrbitalPeriod { get; set; }
         public double OrbitalVelocity { get; set; }
+        public string ImageUrl { get; set; }
     }
 }

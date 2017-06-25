@@ -24,7 +24,8 @@ namespace PlanetProject.Data.Repositories
                 Diameter =  4879,
                 LengthOfDay = 4222.6,
                 OrbitalPeriod = 88.0,
-                OrbitalVelocity = 47.4
+                OrbitalVelocity = 47.4,
+                ImageUrl = "https://nssdc.gsfc.nasa.gov/planetary/banner/mercury.gif"
             },
             new PlanetEntity
             {
@@ -35,7 +36,8 @@ namespace PlanetProject.Data.Repositories
                 Diameter =  12104,
                 LengthOfDay = 2802,
                 OrbitalPeriod = 224.7,
-                OrbitalVelocity = 35.0
+                OrbitalVelocity = 35.0,
+                ImageUrl = "https://nssdc.gsfc.nasa.gov/planetary/banner/venus.gif"
             },
             new PlanetEntity
             {
@@ -46,7 +48,8 @@ namespace PlanetProject.Data.Repositories
                 Diameter =  12756,
                 LengthOfDay = 24,
                 OrbitalPeriod = 365.2,
-                OrbitalVelocity = 29.8
+                OrbitalVelocity = 29.8,
+                ImageUrl = "https://nssdc.gsfc.nasa.gov/planetary/banner/earth.gif"
             },
             new PlanetEntity
             {
@@ -57,7 +60,8 @@ namespace PlanetProject.Data.Repositories
                 Diameter =  6792,
                 LengthOfDay = 24.7,
                 OrbitalPeriod = 687.0,
-                OrbitalVelocity = 24.1
+                OrbitalVelocity = 24.1,
+                ImageUrl = "https://nssdc.gsfc.nasa.gov/planetary/banner/mars.gif"
             },
             new PlanetEntity
             {
@@ -68,7 +72,8 @@ namespace PlanetProject.Data.Repositories
                 Diameter =  142984,
                 LengthOfDay = 9.9,
                 OrbitalPeriod = 4331,
-                OrbitalVelocity = 13.1
+                OrbitalVelocity = 13.1,
+                ImageUrl = "https://nssdc.gsfc.nasa.gov/planetary/banner/jupiter.gif"
             },
             new PlanetEntity
             {
@@ -79,7 +84,8 @@ namespace PlanetProject.Data.Repositories
                 Diameter =  120536,
                 LengthOfDay = 10.7,
                 OrbitalPeriod = 10747,
-                OrbitalVelocity = 9.7
+                OrbitalVelocity = 9.7,
+                ImageUrl = "https://nssdc.gsfc.nasa.gov/planetary/banner/saturn.gif"
             },
             new PlanetEntity
             {
@@ -90,7 +96,8 @@ namespace PlanetProject.Data.Repositories
                 Diameter =  51118,
                 LengthOfDay = 17.2,
                 OrbitalPeriod = 30589,
-                OrbitalVelocity = 6.8
+                OrbitalVelocity = 6.8,
+                ImageUrl = "https://nssdc.gsfc.nasa.gov/planetary/banner/uranus.gif"
             },
             new PlanetEntity
             {
@@ -101,7 +108,8 @@ namespace PlanetProject.Data.Repositories
                 Diameter =  49528,
                 LengthOfDay = 16.1,
                 OrbitalPeriod = 59800,
-                OrbitalVelocity = 5.4
+                OrbitalVelocity = 5.4,
+                ImageUrl = "https://nssdc.gsfc.nasa.gov/planetary/banner/neptune.gif"
             }
         };
 

@@ -36,5 +36,10 @@
         /// Orbital Velocity (km/s)
         /// </summary>
         public double OrbitalVelocity { get; set; }
+
+        /// <summary>
+        /// An image of the planet
+        /// </summary>
+        public string ImageUrl { get; set; }
     }
 }

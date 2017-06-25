@@ -45,7 +45,8 @@ namespace PlanetProject.Web.Modules.API
                 Diameter = planet.Diameter,
                 LengthOfDay = planet.LengthOfDay,
                 OrbitalPeriod = planet.OrbitalPeriod,
-                OrbitalVelocity = planet.OrbitalVelocity
+                OrbitalVelocity = planet.OrbitalVelocity,
+                ImageUrl = planet.ImageUrl
             };
         }
     }
