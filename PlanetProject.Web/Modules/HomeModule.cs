@@ -1,5 +1,4 @@
 ﻿using Nancy;
-using PlanetProject.Web.ViewModels;
 
 namespace PlanetProject.Web.Modules
 {

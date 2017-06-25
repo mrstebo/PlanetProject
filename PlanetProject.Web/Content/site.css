@@ -1,0 +1,11 @@
+body {
+  padding: 20px;
+}
+
+td.info-label {
+  width: 120px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: azure;
+}
