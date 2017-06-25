@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlanetProject.Core.Tests", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlanetProject.Data", "PlanetProject.Data\PlanetProject.Data.csproj", "{588E251E-E824-49EB-BCE1-8159874B86C0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlanetProject.Web.Tests", "PlanetProject.Web.Tests\PlanetProject.Web.Tests.csproj", "{DF0C71D8-7435-4BA8-9912-B864B8D39982}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,11 +37,16 @@ Global
 		{588E251E-E824-49EB-BCE1-8159874B86C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{588E251E-E824-49EB-BCE1-8159874B86C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{588E251E-E824-49EB-BCE1-8159874B86C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF0C71D8-7435-4BA8-9912-B864B8D39982}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF0C71D8-7435-4BA8-9912-B864B8D39982}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF0C71D8-7435-4BA8-9912-B864B8D39982}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF0C71D8-7435-4BA8-9912-B864B8D39982}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{D2380EC6-05C0-48FC-A8D7-730A32713FDF} = {54F2F5AA-981A-42E6-8BAF-935DCFA77F1E}
+		{DF0C71D8-7435-4BA8-9912-B864B8D39982} = {54F2F5AA-981A-42E6-8BAF-935DCFA77F1E}
 	EndGlobalSection
 EndGlobal
