@@ -2,12 +2,23 @@ body {
   padding: 20px;
 }
 
+.planet-data {
+  position: absolute;
+  width: 99%;
+  z-index: 100;
+}
+
 td.info-label {
   width: 240px;
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
   background-color: azure;
+}
+
+td.info-value {
+  background: black;
+  color: white;
 }
 
 td.planet-image {
