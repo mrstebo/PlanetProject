@@ -15,7 +15,7 @@
         </div>
       </div>
       <div class="col-md-8">
-        <table class="table table-bordered">
+        <table id="planetInfo" class="table table-bordered">
           <tbody>
             <tr>
               <td class="info-label">Name</td>
@@ -37,13 +37,52 @@
     function addPlanetItem(planet) {
       var element = $('<a />')
         .attr('href', '#')
-        .attr('class', 'list-group-item')
+        .attr('class', 'planet-item list-group-item')
+        .attr('onclick', 'showInfoForPlanet(\'' + planet.name + '\')')
         .text(planet.name);
       $('#planetList').append(element);
     }
 
-    function showInfoForPlanet(planet) {
+    function showInfoForPlanet(planetName) {
+      $.ajax({
+        method: 'GET',
+        url: '/api/planets/' + planetName.toLowerCase(),
+        success: function(data) {
+          console.log(data);
+          populateInfoTable(data);
+        }
+      });
+    }
 
+    function populateInfoTable(planet) {
+      $('#planetInfo tr').remove();
+      for (var prop in planet) {
+        if (planet.hasOwnProperty(prop)) {
+          addRowToInfoTable(titleize(prop), planet[prop]);
+        }
+      }
+    }
+
+    function addRowToInfoTable(label, value) {
+      var element = $('<tr />');
+      var labelElement = $('<td />')
+        .attr('class', 'info-label')
+        .text(label);
+      var valueElement = $('<td />')
+        .text(value);
+      element.append(labelElement);
+      element.append(valueElement);
+      $('#planetInfo tbody').append(element);
+    }
+
+    function titleize(text) {
+      return text
+        .replace(/([A-Z])/g, function(match) {
+           return " " + match;
+        })
+        .replace(/^./, function(match) {
+          return match.toUpperCase();
+        });
     }
 
     function init() {
