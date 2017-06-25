@@ -19,7 +19,7 @@ namespace PlanetProject.Data.Repositories
             {
                 Id = 1,
                 Name = "Mercury",
-                DistanceFromSun = 57909227,
+                DistanceFromSun = 57.9,
                 Mass = 0.330,
                 Diameter =  4879,
                 LengthOfDay = 4222.6,
@@ -31,7 +31,7 @@ namespace PlanetProject.Data.Repositories
             {
                 Id = 2,
                 Name = "Venus",
-                DistanceFromSun = 108209475,
+                DistanceFromSun = 108.2,
                 Mass = 4.87,
                 Diameter =  12104,
                 LengthOfDay = 2802,
@@ -43,7 +43,7 @@ namespace PlanetProject.Data.Repositories
             {
                 Id = 3,
                 Name = "Earth",
-                DistanceFromSun = 149598262,
+                DistanceFromSun = 149.6,
                 Mass = 5.97,
                 Diameter =  12756,
                 LengthOfDay = 24,
@@ -55,7 +55,7 @@ namespace PlanetProject.Data.Repositories
             {
                 Id = 4,
                 Name = "Mars",
-                DistanceFromSun = 227943824,
+                DistanceFromSun = 227.9,
                 Mass = 0.642,
                 Diameter =  6792,
                 LengthOfDay = 24.7,
@@ -67,7 +67,7 @@ namespace PlanetProject.Data.Repositories
             {
                 Id = 5,
                 Name = "Jupiter",
-                DistanceFromSun = 778340821,
+                DistanceFromSun = 778.6,
                 Mass = 1898,
                 Diameter =  142984,
                 LengthOfDay = 9.9,
@@ -79,7 +79,7 @@ namespace PlanetProject.Data.Repositories
             {
                 Id = 6,
                 Name = "Saturn",
-                DistanceFromSun = 1426666422,
+                DistanceFromSun = 1433.5,
                 Mass = 568,
                 Diameter =  120536,
                 LengthOfDay = 10.7,
@@ -91,7 +91,7 @@ namespace PlanetProject.Data.Repositories
             {
                 Id = 7,
                 Name = "Uranus",
-                DistanceFromSun = 2870658186,
+                DistanceFromSun = 2872.5,
                 Mass = 86.8,
                 Diameter =  51118,
                 LengthOfDay = 17.2,
@@ -103,7 +103,7 @@ namespace PlanetProject.Data.Repositories
             {
                 Id = 8,
                 Name = "Neptune",
-                DistanceFromSun = 4498396441,
+                DistanceFromSun = 4495.1,
                 Mass = 102,
                 Diameter =  49528,
                 LengthOfDay = 16.1,

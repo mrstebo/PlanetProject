@@ -10,7 +10,7 @@
         /// <summary>
         /// Distance from the sun (km)
         /// </summary>
-        public long DistanceFromSun { get; set; }
+        public double DistanceFromSun { get; set; }
 
         /// <summary>
         /// The mass of the planet (10^24 kg)

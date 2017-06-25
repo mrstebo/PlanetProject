@@ -3,7 +3,7 @@
     public class PlanetViewModel
     {
         public string Name { get; set; }
-        public long DistanceFromSun { get; set; }
+        public double DistanceFromSun { get; set; }
         public double Mass { get; set; }
         public long Diameter { get; set; }
         public double LengthOfDay { get; set; }
