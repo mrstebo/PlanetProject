@@ -3,9 +3,14 @@ body {
 }
 
 td.info-label {
-  width: 180px;
+  width: 240px;
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
   background-color: azure;
+}
+
+td.planet-image {
+  background-color: black;
+  align-content: center;
 }

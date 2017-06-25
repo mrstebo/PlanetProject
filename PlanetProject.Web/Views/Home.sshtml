@@ -14,7 +14,7 @@
         <div id="planetList" class="list-group">
         </div>
       </div>
-      <div class="col-md-8">
+      <div class="col-md-4">
         <table id="planetInfo" class="table table-bordered">
           <tbody>
           </tbody>
@@ -49,11 +49,26 @@
 
     function populateInfoTable(planet) {
       $('#planetInfo tr').remove();
-      for (var prop in planet) {
-        if (planet.hasOwnProperty(prop)) {
-          addRowToInfoTable(titleize(prop), planet[prop]);
-        }
-      }
+      addImageRow(planet.imageUrl);
+      addRowToInfoTable('Name', planet.name);
+      addRowToInfoTable('Distance from sun (10^6 km)', planet.distanceFromSun);
+      addRowToInfoTable('Mass (10^24 kg)', planet.mass);
+      addRowToInfoTable('Diameter (km)', planet.diameter);
+      addRowToInfoTable('Length of day (hours)', planet.lengthOfDay);
+      addRowToInfoTable('Orbital Period (days)', planet.orbitalPeriod);
+      addRowToInfoTable('Orbital Velocity (km/s)', planet.orbitalVelocity);
+    }
+
+    function addImageRow(imageUrl) {
+      var element = $('<tr />');
+      var blankElement = $('<td />')
+        .attr('class', 'info-label');
+      var imageElement = $('<td />')
+        .attr('class', 'planet-image')
+        .append($('<img />').attr('src', imageUrl));
+      element.append(blankElement);
+      element.append(imageElement);
+      $('#planetInfo tbody').append(element);
     }
 
     function addRowToInfoTable(label, value) {
